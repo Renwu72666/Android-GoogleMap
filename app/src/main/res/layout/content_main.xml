@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.googlemap.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="緯度: "
+            android:textColor="#260826"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/LatitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#2c3c83"
+            android:textSize="20sp"
+            android:text="22.644444"
+            android:maxLines="1"
+            android:width="290dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="left" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="經度: "
+            android:layout_alignParentLeft="true"
+            android:textColor="#260826"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/LongtitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#2c3c83"
+            android:text="120.6075757"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:width="290dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="right" >
+        <Button
+            android:id="@+id/findmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="搜尋" />
+    </LinearLayout>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
